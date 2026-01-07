@@ -1,21 +1,15 @@
-# Projet-TSA
-# Pedra, Papel e Tesoura (Console Game)
+# 🌐 Bash Multi-Player Rock-Paper-Scissors
 
-Um jogo simples de Pedra, Papel e Tesoura desenvolvido em Python para ser jogado diretamente no terminal. Este projeto foi criado como um exercício prático para aprender e consolidar conceitos básicos de Python, como lógica condicional, loops e o uso do módulo `random`.
+Um sistema Cliente-Servidor escrito em **Bash** que permite que dois jogadores em computadores diferentes joguem Pedra, Papel ou Tesoura através de uma rede local.
 
-## ✨ Funcionalidades
+## 🛠️ Requisitos
+* Sistema Operativo: Linux / macOS / WSL (Windows)
+* Dependência: `netcat` (instalado por padrão na maioria das distros)
 
-* Permite múltiplas rondas até o jogador decidir sair.
-* Mantém a contagem de pontuação entre o jogador e o computador.
-* Validação de entrada para garantir que o jogador escolhe uma opção válida.
+## 🚀 Como Jogar
 
-## 🛠️ Tecnologias Utilizadas
-
-* **Python 3**
-* **Módulo `random`** (Para a escolha aleatória do computador)
-* **Módulo `time`** (Para uma pequena pausa, adicionando um toque de suspense)
-
-## 🚀 Como Executar o Jogo
-
-Siga estes passos simples para ter o jogo a correr na sua máquina local.
-
+### 1. Preparar o Servidor (O Árbitro)
+No computador que servirá de servidor, execute:
+```bash
+chmod +x server.sh
+./server.sh
